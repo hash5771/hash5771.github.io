@@ -1,0 +1,50 @@
+body{
+    background-color: olive;
+}
+
+
+#flex-parent{
+    display:flex;
+    background-color: orangered;
+    /* flex-direction: row; */
+}
+#flex-parent p{
+    padding:5vw;
+}
+
+#flex-child1{
+     order: 3;
+}
+#flex-child2{
+    order:4;
+}
+#flex-child3{
+    order:2;
+}
+#flex-child4{
+     order:1;
+}
+
+
+#grid-parent{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /* use 1fr for equal distribution */
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1vw; /* spacing between grid items */
+    width: 50vw; /* adjust this to set the overall width of the keypad */
+    margin: auto; /* centers the grid on the page */
+}
+
+#grid-parent h1{
+    background-color: grey;
+    padding: 3vw 5vh;
+    margin: 5vw;
+    display: flex;
+    justify-content: center; /* center the number horizontally */
+    align-items: center; /* center the number vertically */
+}
+
+#no0 {
+    grid-column: 2/3; /* center the 0 in the bottom row */
+    grid-row: 4/5; /* place it on the fourth row */
+}
