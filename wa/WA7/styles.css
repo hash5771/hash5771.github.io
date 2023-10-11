@@ -1,0 +1,87 @@
+/* Use of flexbox, grid, float, and positioning complete */
+
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  /* #3: The image inside the article should wrap text */
+  float: left;
+  margin: 0px 20px 0px 0px;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+}
+
+nav {
+  background-color: #000;
+  padding: .5em;
+  /* #2: Make navbar stick when scrolling */
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* #1: Display nav items in a row with equal spacing */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* #5: Photographs display as a two column grid with a 1px gap */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+}
+
+.feature {
+  width: 200px;
+}
+
+article, aside {
+  margin: 0px 10px 0px 10px;
+}
+
+/* Media queries for screens smaller and larger than 500px */
+@media (max-width: 500px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 500px) {
+  /* #4: The article and side elements should be a two column layout - flexible sizing via fractional vw */
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
