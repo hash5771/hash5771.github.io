@@ -50,6 +50,10 @@ nav a {
   color: #fff;
   text-decoration: none;
   padding: .5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .photos {
@@ -72,6 +76,18 @@ article, aside {
 
 /* Media queries for screens smaller and larger than 500px */
 @media (max-width: 500px) {
+  body {
+    font: 1em / 1 Arial, Helvetica, sans-serif;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
   .grid {
     display: flex;
     flex-direction: column;
