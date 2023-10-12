@@ -1,0 +1,24 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+.table-of-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.ica, .wa {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+}
