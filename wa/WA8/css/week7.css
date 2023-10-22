@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: lightseagreen;
+}
+
+nav a {
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:orangered;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: green;
+    cursor: pointer;
+}
+
+img {
+    width:30vw;
+    height:30vh;
+}
+
+img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 1;
+}
+
+#red-ball {
+    background-color: lightslategray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5vw;
+    top: 20vh;
+    animation: move 5s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        left: 5vw;
+        top: 10vh;
+        z-index: 1;
+    }
+    50% {
+        left: 95vw;
+        top: 40vh;
+        z-index: 0;
+    }
+    100% {
+        left: 5vw;
+        top: 10vh;
+    }
+}
