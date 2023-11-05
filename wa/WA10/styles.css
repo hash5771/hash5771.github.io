@@ -1,0 +1,79 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+div {
+  padding-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 150px;
+}
+
+p {
+  background: #0b0b0b;
+  color: lightblue;
+  padding: 10px;
+  visibility: hidden;
+  width: 80%;
+  text-align: center;
+}
+
+#customname {
+  margin-left: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #fafafa;
+  box-shadow: 2px 2px 2px 2px;
+  transition: 0.2s ease-in-out;
+}
+
+#customname:hover {
+  scale: 1.05;
+}
+
+#us:hover, #uk:hover {
+  scale: 1.2;
+}
+
+#radio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.randomize {
+  background-color: lightsalmon;
+  box-shadow: 2px 2px 2px 2px;
+  border: none;
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.randomize:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
