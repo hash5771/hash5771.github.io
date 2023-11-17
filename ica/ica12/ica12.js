@@ -10,7 +10,7 @@ async function displayQuote(data) {
 
   const answerButton = document.getElementById('js-tweet');
   answerButton.addEventListener('click', () => {
-    jsAnswerText.innerText = answer; 
+    jsAnswerText.innerText = answer;
   })
 }
 

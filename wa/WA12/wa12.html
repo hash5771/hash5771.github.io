@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa12.css">
+    <title>WA 12: Quote Machine Part 2, Electric Boogaloo</title>
+</head>
+<body>
+  <div class="app">
+    <div class="points">
+      <div class="points-won">Points Won: 0</div>
+      <div class="points-lost">Points Lost: 0</div>
+    </div>
+    <header>Country Guesser</header>
+    <div class="countries">
+      <div class="country-image" id="js-country-image">
+        <!-- Country Flag Will Appear Here -->
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AImage_not_available.png&psig=AOvVaw0UQzxWFG2GaNLLJwv6qM9D&ust=1700288784879000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCKCc67mzyoIDFQAAAAAdAAAAABAI" alt="Country Flag" id="country-flag">
+      </div>
+      <div class="country-text" id="js-answer-text">
+        <!-- Country Name Will Appear Here -->
+      </div>
+    </div>
+    <div class="controls">
+      <textarea class="answer-box" id="answer-box" placeholder="Guess the Country"></textarea>
+      <button type="button" id="js-new-country" class="new-country button">
+        Generate New Flag
+      </button>
+      <button type="button" id="js-show-answer" class="show-answer button">
+        Show Answer
+      </button>
+    </div>
+  </div>
+  <script src="wa12.js"></script>
+</body>
+</html>
