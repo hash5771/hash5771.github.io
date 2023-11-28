@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>JSON: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    const section = document.querySelector('section');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+    let motherInfo = 'The mother cats are called ';
+    let kittenInfo;
+    const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
+
+    fetch(requestURL)
+    .then(response => response.text())
+    .then(text => displayCatInfo(text))
+
+    function displayCatInfo(catString) {
+      let total = 0;
+      let male = 0;
+
+      // Add your code here
+
+      // Parse the string into JSON
+      const catJSON = JSON.parse(catString);
+
+      let motherInfo = '';
+      let kittenInfo = '';
+
+      // Get the total number of mother cats
+      const numMotherCats = catJSON.length;
+
+      catJSON.forEach((motherCat, index) => {
+        // if not the last mother cat, append the name and a comma
+        if (index !== numMotherCats - 1) {
+          motherInfo += `${motherCat.name}, `;
+        } else {
+          motherInfo += `and ${motherCat.name}`;
+        }
+
+        // sum up the number of kittens, keep track of total and how many are male
+        const currentKittens = motherCat.kittens;
+        currentKittens.forEach((kitten) => {
+          if (kitten.gender === 'm') {
+            male += 1;
+          }
+          total += 1;
+        });
+      });
+
+      let females = total - male;
+      kittenInfo = `There are ${total} kittens, ${male} males and ${females} females!`
+
+      // Don't edit the code below here!
+
+      para1.textContent = motherInfo;
+      para2.textContent = kittenInfo;
+    }
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+
+</html>
