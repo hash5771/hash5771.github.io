@@ -8,25 +8,77 @@
 </head>
 <body>
   <div class="page-wrapper">
-    <h1>PLEASE ENTER YOUR PHONE NUMBER</h1>
+    <div class="title">Please Enter Your Phone Number</div>
+    <div class="subtitle">Everytime you enter a number, we will apply a formula to it. Everytime you click on an input box we will add 1 for fun! Please enter your number and press confirm when finished.</div>
 
-    <form>
-      <input type="text" id="phone-1" maxlength="1" size="1" placeholder="-" disabled>
-      <input type="text" id="phone-2" maxlength="1" size="1" placeholder="-" disabled>
-      <input type="text" id="phone-3" maxlength="1" size="1" placeholder="-" disabled>
-      <input type="text" id="phone-4" maxlength="1" size="1" placeholder="-" disabled>
-      <input type="text" id="phone-5" maxlength="1" size="1" placeholder="-" disabled>
-      <input type="text" id="phone-6" maxlength="1" size="1" placeholder="-" disabled>
-      <input type="text" id="phone-7" maxlength="1" size="1" placeholder="-" disabled>
-      <input type="text" id="phone-8" maxlength="1" size="1" placeholder="-" disabled>
-      <input type="text" id="phone-9" maxlength="1" size="1" placeholder="-" disabled>
-    </form>
+    <div class="form-container">
+      <form>
+        <div class="input-container">
+          <label for="phone-1">1</label>
+          <input type="text" id="phone-1" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+    
+        <div class="input-container">
+          <label for="phone-2">2</label>
+          <input type="text" id="phone-2" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+    
+        <div class="input-container">
+          <label for="phone-3">3</label>
+          <input type="text" id="phone-3" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+    
+        <div class="input-container">
+          <label for="phone-4">4</label>
+          <input type="text" id="phone-4" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+    
+        <div class="input-container">
+          <label for="phone-5">5</label>
+          <input type="text" id="phone-5" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+    
+        <div class="input-container">
+          <label for="phone-6">6</label>
+          <input type="text" id="phone-6" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+    
+        <div class="input-container">
+          <label for="phone-7">7</label>
+          <input type="text" id="phone-7" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+    
+        <div class="input-container">
+          <label for="phone-8">8</label>
+          <input type="text" id="phone-8" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+    
+        <div class="input-container">
+          <label for="phone-9">9</label>
+          <input type="text" id="phone-9" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+
+        <div class="input-container">
+          <label for="phone-10">10</label>
+          <input type="text" id="phone-10" size="1" placeholder="-" disabled>
+          <div class="description"></div>
+        </div>
+      </form>
+    </div>
 
     <div class="button-container">
-      <button class="button" id="begin-button">Begin</button>
-      <button class="button" id="stop-button">Stop</button>
-      <button class="button" id="clear-button">Clear</button>
-      <button class="button" id="confirm-button">Confirm</button>
+      <button class="button" id="start-button">START</button>
+      <button class="button" id="reset-button" disabled>RESET</button>
+      <button class="button" id="confirm-button" disabled>CONFIRM</button>
     </div>
   </div>
 
